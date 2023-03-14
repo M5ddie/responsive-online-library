@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74b409f6fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>BOOKS4U</title>
+</head>
+<body>
+    <header id="home">
+        
+    </header>
+
+    <div class="nav-section-container">
+
+        <nav>
+        
+            <div class="sticky-nav">
+                <div class="nav-content">
+                    <div class="book-logo">
+                        <img src="assets/images/book-logo.png" alt="">
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#aboutContact">ABOUT</a></li>
+                        <li><a href="#aboutContact">CONTACT</a></li>
+                    </ul>
+                </div>
+        
+                <div class="nav-search">
+                    <form class="nav-form" action="#">
+                        <input type="text" id="bookSearch" name="bookSearch" placeholder="Enter book title, author, etc.">
+                        <button class="btn-Search">Search</button>
+                        <p>Filter by:</p>
+                        <!-- Dropdown List -->
+                        <select id="bookFilter" name="bookFilter">
+                            <option value="" disabled selected>Title, Author, Genre</option>
+                            <option value="Title">Title</option>
+                            <option value="Author">Author</option>
+                            <option value="divider" disabled>----------</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="sci-Fi">Fantasy</option>
+                            <option value="drama">Drama</option>
+                            <option value="mystery">Mystery</option>
+                        </select>
+                    </form>
+                </div>
+        
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-google-plus"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        
+        </nav>
+        
+            <section class="card-row">
+                <!-- Start of 1 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book1.jpg" alt="To Kill A Mockingbird">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">To Kill A Mockingbird</h5>
+                        <p class="book-author">Author: Harper Lee</p>
+                        <p class="date-published">Date Published: July 11, 1960</p>
+                        <p class="book-desc">
+                            To Kill a Mockingbird is both a young girl's coming-of-age story and a darker drama about the roots and
+                            consequences of racism and prejudice, probing how good and evil can coexist within a single community or
+                            individual.
+                        </p>
+                        <p class="price">Php 545.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                            
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of 1 card -->
+                
+                <!-- Start of 2 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book2.jpg" alt="The Great Gatsby">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">The Great Gatsby</h5>
+                        <p class="book-author">Author: F.Scott Fitzgerald</p>
+                        <p class="date-published">Date Published: April 10, 1925</p>
+                        <p class="book-desc">
+                            Scott Fitzgerald's novel,The Great Gatsby, follows Jay Gatsby, a man who orders his life around one desire: to be reunited with Daisy Buchanan, the love he lost five years earlier. Gatsby's quest leads him from poverty to wealth, into the arms of his beloved, and eventually to death.
+                        </p>
+                        <p class="price">Php 659.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                    
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of 2 card -->
+
+                <!-- Start of 3 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book3.jpg" alt="1984">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">1984</h5>
+                        <p class="book-author">Author: George Orwell</p>
+                        <p class="date-published">Date Published: June 8, 1949</p>
+                        <p class="book-desc">
+                            1984 is a dystopian novella by George Orwell published in 1949, which follows the life of Winston Smith, a low ranking member of 'the Party', who is frustrated by the omnipresent eyes of the party, and its ominous ruler Big Brother. 'Big Brother' controls every aspect of people's lives.
+                        </p>
+                        <p class="price">Php 500.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                    
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of 3 card -->
+
+                <!-- Start of 4 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book4.jpg" alt="The Adventures of Huckleberry Finn">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">Adventures of Huckleberry Finn</h5>
+                        <p class="book-author">Author: Mark Twain</p>
+                        <p class="date-published">Date Published: December 10, 1884</p>
+                        <p class="book-desc">
+                            The novel tells the story of Huckleberry Finn's escape from his alcoholic and abusive father and Huck's adventurous journey down the Mississippi River together with the runaway slave Jim.
+                        </p>
+                        <p class="price">Php 599.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                    
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of 4 card -->
+
+                <!-- additional CARDS ============================ -->
+                <!-- Start of 1 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book1.jpg" alt="To Kill A Mockingbird">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">To Kill A Mockingbird</h5>
+                        <p class="book-author">Author: Harper Lee</p>
+                        <p class="date-published">Date Published: July 11, 1960</p>
+                        <p class="book-desc">
+                            To Kill a Mockingbird is both a young girl's coming-of-age story and a darker drama about the roots and
+                            consequences of racism and prejudice, probing how good and evil can coexist within a single community or
+                            individual.
+                        </p>
+                        <p class="price">Php 545.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                            
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of 1 card -->
+                
+                <!-- Start of 2 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book2.jpg" alt="The Great Gatsby">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">The Great Gatsby</h5>
+                        <p class="book-author">Author: F.Scott Fitzgerald</p>
+                        <p class="date-published">Date Published: April 10, 1925</p>
+                        <p class="book-desc">
+                            Scott Fitzgerald's novel,The Great Gatsby, follows Jay Gatsby, a man who orders his life around one desire: to be reunited with Daisy Buchanan, the love he lost five years earlier. Gatsby's quest leads him from poverty to wealth, into the arms of his beloved, and eventually to death.
+                        </p>
+                        <p class="price">Php 659.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                    
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of 2 card -->
+
+                <!-- Start of 3 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book3.jpg" alt="1984">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">1984</h5>
+                        <p class="book-author">Author: George Orwell</p>
+                        <p class="date-published">Date Published: June 8, 1949</p>
+                        <p class="book-desc">
+                            1984 is a dystopian novella by George Orwell published in 1949, which follows the life of Winston Smith, a low ranking member of 'the Party', who is frustrated by the omnipresent eyes of the party, and its ominous ruler Big Brother. 'Big Brother' controls every aspect of people's lives.
+                        </p>
+                        <p class="price">Php 500.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                    
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of 3 card -->
+
+                <!-- Start of 4 card -->
+                <div class="card-content">
+                    <div class="book-cover">
+                        <img src="assets/images/book4.jpg" alt="The Adventures of Huckleberry Finn">
+                    </div>
+                    <div class="book-info">
+                        <h5 class="book-title">Adventures of Huckleberry Finn</h5>
+                        <p class="book-author">Author: Mark Twain</p>
+                        <p class="date-published">Date Published: December 10, 1884</p>
+                        <p class="book-desc">
+                            The novel tells the story of Huckleberry Finn's escape from his alcoholic and abusive father and Huck's adventurous journey down the Mississippi River together with the runaway slave Jim.
+                        </p>
+                        <p class="price">Php 599.00</p>
+
+                        <!-- Action buttons -->
+                        <div class="card-actions">
+                    
+                            <button id="addCart" name="addCart" title="Add to Cart">
+                                <!-- Add to cart -->
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                    
+                            <button id="addWishlist" name="addWishlist" title="Add to Wishlist">
+                                <!-- Add to wishlist -->
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                    
+                            <a href="checkoutForm.html">
+                                <button id="buyNow" name="buyNow">
+                                    Buy Now
+                                    <i class="fa-solid fa-cash-register"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of 4 card -->
+                <!-- END of additional CARDS ============================ -->
+            </section>
+            <!-- End of card-row -->
+
+    </div>
+    <footer id="aboutContact">
+        Manila, Philippines
+    </footer>
+    
+</body>
+</html>

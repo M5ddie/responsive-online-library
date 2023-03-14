@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74b409f6fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Checkout Books4U</title>
+</head>
+<body>
+    <header id="home">
+        
+    </header>
+
+    <div class="nav-section-container">
+
+        <nav>
+        
+            <div class="sticky-nav">
+                <div class="nav-content">
+                    <div class="book-logo">
+                        <img src="assets/images/book-logo.png" alt="">
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#aboutContact">ABOUT</a></li>
+                        <li><a href="#aboutContact">CONTACT</a></li>
+                    </ul>
+                </div>
+        
+                <div class="nav-search">
+                    <form class="nav-form" action="#">
+                        <input type="text" id="bookSearch" name="bookSearch" placeholder="Enter book title, author, etc.">
+                        <button class="btn-Search">Search</button>
+                        <p>Filter by:</p>
+                        <!-- Dropdown List -->
+                        <select id="bookFilter" name="bookFilter">
+                            <option value="" disabled selected>Title, Author, Genre</option>
+                            <option value="Title">Title</option>
+                            <option value="Author">Author</option>
+                            <option value="divider" disabled>----------</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="sci-Fi">Fantasy</option>
+                            <option value="drama">Drama</option>
+                            <option value="mystery">Mystery</option>
+                        </select>
+                    </form>
+                </div>
+        
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-google-plus"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        
+        </nav>
+
+        <section class="checkout-section">
+
+            <div class="cart-container">
+                
+                <div class="cart-list">
+                    <h1>Your Order</h1>
+                    <div class="book-item">
+                        <img src="assets/images/book2.jpg" alt="cart item">
+                        <div class="item-desc">
+                            <h5>The Great Gatsby</h5>
+                            <p class="book-author">Author: F.Scott Fitzgerald</p>
+                            <label for="quantity" class="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" class="quantity" min="1" max="10" value="1">
+                            
+                            <div class="item-actions">
+                                <button class="item-act">Remove</button>
+                            </div>
+                        </div>
+
+                        <div class="price">
+                            Php 659.00
+                        </div>
+                    </div>
+                    <div class="book-item">
+                        <img src="assets/images/book4.jpg" alt="cart item">
+                        <div class="item-desc">
+                            <h5>Adventures of Huckleberry Finn</h5>
+                            <p class="book-author">Author: Mark Twain</p>
+                            <label for="quantity" class="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" class="quantity" min="1" max="10" value="1">
+                            
+                            <div class="item-actions">
+                                <button class="item-act">Remove</button>
+                            </div>
+                        </div>
+
+                        <div class="price">
+                            Php 599.00
+                        </div>
+                    </div>
+                    <div class="book-item">
+                        <img src="assets/images/book1.jpg" alt="cart item">
+                        <div class="item-desc">
+                            <h5>To Kill A Mockingbird</h5>
+                            <p class="book-author">Author: Harper Lee</p>
+                            <label for="quantity" class="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" class="quantity" min="1" max="10" value="1">
+                            
+                            <div class="item-actions">
+                                <button class="item-act">Remove</button>
+                            </div>
+                        </div>
+
+                        <div class="price">
+                            Php 545.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="computation">
+
+                    <table class="order-summary">
+                        <thead>
+                            <th colspan="3">Order Summary</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>No. of items:</td>
+                                <td class="align-amounts" colspan="2">3</td>
+                            </tr>
+                            <tr>
+                                <td>Subtotal:</td>
+                                <td class="align-amounts">Php</td>
+                                <td class="align-amounts">1,803.00</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery fee:</td>
+                                <td class="align-amounts">Php</td>
+                                <td class="align-amounts">50.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total amount:</td>
+                                <td class="align-amounts">Php</td>
+                                <td class="align-amounts price">1,853.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="checkout-form">
+                
+                <table class="checkout-table">
+                    <form action="#" method="#">
+                        <thead>
+                            <th colspan="2">BOOKS4U Checkout Form</th>
+                        </thead>
+                        <tbody>
+                            <!-- user name -->
+                            <tr>
+                                <td class="label-td"><label for="userName">Name:</label></td>
+                                <td><input type="text" id="userName" name="userName"></td>
+                            </tr>
+            
+                            <!-- user address -->
+                            <tr>
+                                <td class="label-td"><label for="userAddress">Delivery Address:</label></td>
+                                <td><input type="text" id="userAddress" name="userAddress"></td>
+                            </tr>
+            
+                            <!-- user region -->
+                            <tr>
+                                <td class="label-td"><label for="userRegion">Region:</label></td>
+                                <td>
+                                    <select name="userRegion" id="userRegion">
+                                        <option value="region">Select Region</option>
+                                        <option value="ncr">NCR</option>
+                                        <option value="car">CAR</option>
+                                        <option value="mimaropa">MIMAROPA</option>
+                                        <option value="barmm">BARMM</option>
+                                    </select>
+                                </td>
+                            </tr>
+            
+                            <!-- user contact -->
+                            <tr>
+                                <td class="label-td"><label for="userContact">Contact Number:</label></td>
+                                <td><input type="tel" id="userContact" name="userContact" pattern="[0-9]{11}" placeholder="ex. 09123456789" maxlength="11"></td>
+                            </tr>
+            
+                            <!-- payment method / required to choose one method-->
+                            <tr>
+                                <td><label for="payMethod">Payment Method:</label></td>
+                                <td>
+                                    <input type="radio" id="cod" name="payMethod" value="cod" required>
+                                    <label for="cod">Cash on Delivery</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="emptyCell"></td> <!--empty td-->
+                                <td>
+                                    <input type="radio" id="masterCard" name="payMethod" value="masterCard">
+                                    <label for="masterCard">Master Card</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="emptyCell"></td> <!--empty td-->
+                                <td>
+                                    <input type="radio" id="visa" name="payMethod" value="visa">
+                                    <label for="visa">Visa</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="emptyCell"></td> <!--empty td-->
+                                <td>
+                                    <input type="radio" id="americanExpress" name="payMethod" value="americanExpress">
+                                    <label for="americanExpress">American Express</label>
+                                </td>
+                            </tr>
+            
+                            <!-- Place Order -->
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" id="placeOrder" name="placeOrder" value="Place Order">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </form>
+                </table>
+
+            </div>  <!-- end of checkout-form -->
+
+        </section>  <!-- end of checkout section -->
+
+    </div>  <!-- end of nav & section container -->
+
+    <footer id="aboutContact">
+        Manila, Philippines
+    </footer>
+
+</body>
+</html>
